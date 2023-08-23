@@ -13,12 +13,14 @@ npm install vue-bootstrap-site-progressbar
 ```vue
 <template>
   <SiteProgressBar :active="isLoading" bgClass="bg-primary"></SiteProgressBar>
-  <button @click.prevent="isLoading = !isLoading">TOGGLE PROGRESS BAR</button>
+  <button v-if="!isLoading" @click.prevent="isLoading = true">START</button>
+  <button v-if="isLoading" @click.prevent="isLoading = false">STOP</button>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import SiteProgressBar from '../lib/SiteProgressBar.vue'
+
 const isLoading = ref(false)
 </script>
 
