@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-site-progressbar",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/vue-bootstrap-site-progressbar.umd.cjs",
