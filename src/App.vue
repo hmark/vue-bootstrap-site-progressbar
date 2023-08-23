@@ -1,5 +1,5 @@
 <template>
-  <SiteProgressBar :active="isLoading" bgClass="bg-danger"></SiteProgressBar>
+  <SiteProgressBar :active="isLoading" bgClass="bg-primary"></SiteProgressBar>
   <button @click.prevent="isLoading = !isLoading">TOGGLE PROGRESS BAR</button>
 </template>
 
