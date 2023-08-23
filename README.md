@@ -19,7 +19,7 @@ npm install vue-bootstrap-site-progressbar
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import SiteProgressBar from '../lib/SiteProgressBar.vue'
+import { SiteProgressBar } from 'vue-bootstrap-site-progressbar'
 
 const isLoading = ref(false)
 </script>
